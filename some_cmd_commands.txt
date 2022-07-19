@@ -1,0 +1,40 @@
+-to list all file&folders in current directoryn:
+ls or dir 
+
+-go back previous or more directory:
+cd.. or cd ../.. etc.
+
+- to change disk
+cd /d D:
+
+-to open a folder:
+cd -Folder name-
+
+-to the root of c disk:
+cd\ 
+
+-clear screen:
+cls or clear
+
+-creating a folder:
+mkdir -folder name-
+
+-dosya oluşturmak için:
+echo this is test file>test.txt
+
+-to open vs code:
+code .
+
+-deleting a file:
+del -file name-
+
+-deleting folder/directory
+rmdir -folder name-
+
+-to find python directory
+import sys
+sys.path
+
+
+
+
