@@ -64,7 +64,7 @@ mkdir .ssh
 cd .ssh
 
 - generate ssh key
-ssh-keygen.exe
+ssh-keygen.exe  or (ssh-keygen -t rsa -b 4096 -C "email@example.com") ## -t for encryption type, -b for strength of encryption
 
 - to see ssh key that generated 
 cat -your addres here-\.ssh\id_rsa.pub
@@ -129,6 +129,12 @@ git branch -M main
 
 - select repository via ssh/http/github cli
 git remote restore origin -ssh/http/github cli-
+
+
+-----------------------------pull/clone from github------------------------------
+
+git clone ssh/http/github cli
+
 
 
 
