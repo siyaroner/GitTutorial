@@ -135,6 +135,18 @@ git remote restore origin -ssh/http/github cli-
 
 git clone ssh/http/github cli
 
+---------------------- creating new branch-----------
+-to see which branch are you on
+git branch or git status
+
+-to create new branch
+git checkout -b feature-gitGuide-update
+
+-to select branch you want to change
+git chekout main/feature-gitGuide-update etc.
+
+
+
 
 
 
