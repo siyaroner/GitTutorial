@@ -124,8 +124,6 @@ git restore filename
 -commit process
 git commit -m "message"
 
--select branch
-git branch -M main
 
 - select repository via ssh/http/github cli
 git remote restore origin -ssh/http/github cli-
@@ -141,6 +139,10 @@ git branch or git status
 
 -to create new branch
 git checkout -b feature-gitGuide-update
+
+
+-select branch
+git branch -M main
 
 -to select branch you want to change
 git chekout main/feature-gitGuide-update etc.
