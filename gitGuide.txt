@@ -43,7 +43,8 @@ collaborate (see also: git help workflows)							#
 'git help -a' and 'git help -g' list available subcommands and some				#								
 concept guides. See 'git help <command>' or 'git help <concept>'				#									
 to read about a specific subcommand or concept.							#					
-See 'git help git' for an overview of the system.						#					
+See 'git help git' for an overview of the system.
+		#					
 												#									
 #################################################################################################						
 ----------------- with powershell-------------------------------------------------
@@ -106,6 +107,9 @@ git push -u origin main
 -select file/s (if it has modification use git rm --cached filename)
 git rm filename
 
+-to remove folder
+git rm -r -folder name-
+
 -commit process
 git commit -m "message"
 
@@ -124,8 +128,6 @@ git restore filename
 -commit process
 git commit -m "message"
 
--select branch
-git branch -M main
 
 - select repository via ssh/http/github cli
 git remote restore origin -ssh/http/github cli-
@@ -135,9 +137,62 @@ git remote restore origin -ssh/http/github cli-
 
 git clone ssh/http/github cli
 
+<<<<<<< HEAD
 
 
 
+=======
+---------------------- creating new branch-----------
+-to see which branch are you on
+git branch or git status
+
+-to create new branch
+git checkout -b feature-gitGuide-update  or git branch -branch name-
+
+
+-select branch
+git branch -M main
+
+-to select branch you want to change
+git chekout main/feature-gitGuide-update etc.
+
+to see the differences between two version
+git diff
+
+-to delete the branch (usually branches are deleted after they merged with the main branch)
+git branch -d -branch name-
+
+to add and commit at the same time just use -am (just work for updated file/s)
+git commit -am "message here"
+
+- to merge feature branch with main branch
+1. git checkout main
+2. git merge -newbranch-
+2. git push -u origin main
+
+-to log of commit
+git log
+  
+- to undo when add file 
+git reset or git reset -file name- 
+
+-to undo for the last commit after commited (which will unstage)
+git reset HEAD
+git reset HEAD~2 # to undo for 2 step
+
+-to undo certain commit you can use hash of the commit which you find from log
+git reset -hash number-
+
+-to undo and completly remove
+git reset --hard HEAD~x or -hash number-
+
+- to say windows this directory is safe
+git config --global --add safe.directory -directory adress-
+
+
+-if you have push issue try to rebase
+git pull --rebase -repo name-
+>>>>>>> 2e0dd31 (updating gitGuide.txt)
 
 
 
